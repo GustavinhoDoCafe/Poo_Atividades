@@ -33,8 +33,7 @@ public class HelloServlet extends HttpServlet {
             out.println("</head>");
             out.println("<body>");
             out.println("<h1>RA:1290482212045</h1>");
-            out.println("<h2>NOME:Gustavo Sanches Pavani</h2>");
-            out.println("<h2>IDADE:20</h2>");
+            out.println("<h2>NOME:Gustavo Sanches Pavani  idade:20</h2>");
             out.println("</body>");
             out.println("</html>");
         }
