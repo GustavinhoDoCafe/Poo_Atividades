@@ -11,55 +11,34 @@ import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
-import java.util.Date;
 
 /**
  *
- * @author Sanchudo
+ * @author sansichudo
  */
-@WebServlet(name = "hora", urlPatterns = {"/greeting.html"})
-public class GreetingServlet extends HttpServlet {
+@WebServlet(name = "HelloServlet", urlPatterns = {"/eu.html"})
+public class EuServlet extends HttpServlet {
 
-    /**
-     * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
-     * methods.
-     *
-     * @param request servlet request
-     * @param response servlet response
-     * @throws ServletException if a servlet-specific error occurs
-     * @throws IOException if an I/O error occurs
-     */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+
+        
         response.setContentType("text/html;charset=UTF-8");
-            try (PrintWriter out = response.getWriter()) {
+        try (PrintWriter out = response.getWriter()) {
+            
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Horario certo</title>");
+            out.println("<title>Servlet HelloServlet</title>");            
             out.println("</head>");
             out.println("<body>");
-            //retirar a hora 
-            Date now = new Date();
-            int hour = now.getHours();
-            //if e else para verificar o horario
-            String message;
-            if (hour >= 6 && hour < 12) {
-                message = "Bom dia";
-            } else if (hour >= 12 && hour < 18) {
-                message = "Boa tarde";
-            } else if (hour >= 18 && hour < 22) {
-                message = "Boa noite";
-            } else {
-                message = "Vá dormir";
-            }
-           //exibir a mensagem dependendo da hora
-            out.println("<h1>" + message + "</h1>");
-            
+            out.println("<h1>RA:1290482212045</h1>");
+            out.println("<h2>NOME:Gustavo Sanches Pavani  idade:20</h2>");
             out.println("</body>");
             out.println("</html>");
         }
     }
+
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
     /**
      * Handles the HTTP <code>GET</code> method.
