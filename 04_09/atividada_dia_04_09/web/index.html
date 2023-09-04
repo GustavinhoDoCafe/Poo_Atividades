@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    </head>
+    <body>
+        <div id="app">{{ message }}</div>
+        <script>
+            const {createApp} = Vue;    
+//momento do video é https://youtu.be/mSr1KAtUvHk?t=407
+            createApp({
+                data() {
+                    return {
+                        itens:[],
+                        newItem:''
+                    };
+            }, methods: {
+                async fetchData(){
+                    var url ='gustavo.json';
+                    const response = await fetch(url);
+                    const data = await response.json();
+                    this.items = data.list;
+                },
+                add()
+                }              
+            }
+            {(.mount('#app');
+        </script>
+    </body>
+</html>
