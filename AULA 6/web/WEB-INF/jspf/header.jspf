@@ -1,0 +1,6 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<h1>Atividade 6</h1>
+<a href="${pageContext.request.contextPath}/index.jsp">Inicio</a><br>
+<a href="${pageContext.request.contextPath}/juros-simples.jsp">Juros_Simples</a><br>
+<a href="${pageContext.request.contextPath}/juros-composto.jsp">Juros_Composto</a>
