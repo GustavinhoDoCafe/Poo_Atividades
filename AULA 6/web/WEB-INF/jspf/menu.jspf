@@ -1,7 +1,0 @@
-<%-- any content can be specified here e.g.: --%>
-<%@ page pageEncoding="UTF-8" %>
-<h2>MENU</h2>
-<a href="${pageContext.request.contextPath}/index.jsp">INDEX</a>
-<a href="${pageContext.request.contextPath}page1.jsp">PAGE 1</a>
-<a href="${pageContext.request.contextPath}page2.jsp">PAGE 2</a>
-<a href="${pageContext.request.contextPath}page3.jsp">PAGE 3</a>
