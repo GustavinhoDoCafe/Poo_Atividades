@@ -11,9 +11,6 @@
             <input type="text" class="form-control" id="formName" name="session-name">
             <hr/>
             <input type="submit" name="session-login" class="btn btn-primary"/>
-            
-           
-            <%-https://youtu.be/C6Lra39OzKs?t=769-%>
     </form>
   </div>
 </div>
